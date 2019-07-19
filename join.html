@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>加入會員</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.toast.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-horizontal" method="post" action="echo.php">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>加入會員</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="login">帳號</label>
+                    <div class="col-md-4">
+                        <input id="login" name="login" type="text" placeholder="請輸入帳號" class="form-control input-md"
+                            required="">
+
+                    </div>
+                </div>
+
+                <!-- Password input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="password">密碼</label>
+                    <div class="col-md-4">
+                        <input id="password" name="password" type="password" placeholder="請輸入密碼"
+                            class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="email">E-Mail</label>
+                    <div class="col-md-4">
+                        <input id="email" name="email" type="text" placeholder="請輸入E-mail"
+                            class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="phone">電話</label>
+                    <div class="col-md-4">
+                        <input id="phone" name="phone" type="text" placeholder="電話" class="form-control input-md">
+
+                    </div>
+                </div>
+
+
+
+                <!-- Button (Double) -->
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-10">
+                        <button type="submit" name="loginOrCancel" value="login" id="loginButton"
+                            class="btn btn-success">
+                            <span class="glyphicon glyphicon-off"></span> 註冊
+                        </button>
+                        <button type="submit" name="loginOrCancel" value="cancel" id="cancelButton"
+                            class="btn btn-default">
+                            <span class="glyphicon glyphicon-remove"></span> 取消
+                        </button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.toast.js"></script>
+
+</body>
+
+</html>
